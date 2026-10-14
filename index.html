@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Academic Homepage</title>
+<style>
+:root{--ink:#202a35;--muted:#5d6875;--line:#e5e9ee;--accent:#245b86;--wash:#f6f8fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:#fff;font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{width:min(100% - 40px,980px);margin:auto}
+header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.96)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:66px}
+.brand{font-weight:700;color:var(--ink)}
+nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px}
+.lang{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:13px}
+.lang button{border:0;background:none;padding:0;color:var(--muted);cursor:pointer;font:inherit}
+.lang button.active{color:var(--accent);font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 190px;gap:48px;padding:64px 0 48px;align-items:start}
+h1{margin:0 0 8px;font-size:clamp(30px,4vw,42px);line-height:1.2;letter-spacing:-.8px}
+.role{color:var(--muted);margin:0 0 4px}.intro{max-width:680px}
+.contact{margin-top:20px;color:var(--muted);font-size:14px}
+.portrait{width:190px;aspect-ratio:4/5;border-radius:5px;background:var(--wash);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:#788390;padding:20px;font-size:14px}
+section{padding:30px 0;border-top:1px solid var(--line)}h2{font-size:23px;margin:0 0 18px}p{margin:8px 0 12px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:24px 0 36px}
+@media(max-width:650px){.nav{align-items:flex-start;flex-direction:column;padding:14px 0;gap:8px}.nav>div{width:100%}nav{gap:14px}.hero{grid-template-columns:1fr;gap:22px;padding-top:38px}.portrait{width:145px;aspect-ratio:1/1;order:-1}}
+.news-list{margin-top:4px}
+.news-item{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:10px 0;border-top:1px solid var(--line)}
+.news-date{color:var(--muted);font-size:14px;white-space:nowrap}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top" data-en="Ruolin Liu" data-zh="刘若琳">Ruolin Liu</a>
+<div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+<nav>
+<!-- <a href="#about" data-en="About" data-zh="关于我">About</a> -->
+<a href="#news" data-en="News" data-zh="动态">News</a>
+<a href="#research" data-en="Research" data-zh="研究方向">Research</a>
+<!-- Future: Publications / Projects can be enabled here. -->
+<a href="#contact" data-en="Contact" data-zh="联系方式">Contact</a>
+</nav>
+<div class="lang"><button id="en" class="active">English</button><span>|</span><button id="zh">中文</button></div>
+</div>
+</div></header>
+
+<main id="top" class="wrap">
+<div class="hero">
+<div>
+<h1 data-en="Ruolin Liu" data-zh="刘若琳">Ruolin Liu</h1>
+<p class="role" data-en="Master's Student in Artificial Intelligence" data-zh="人工智能专业硕士研究生">Master's Student in Artificial Intelligence</p>
+<p class="role">Tsinghua University</p>
+<div class="intro">
+<p data-en="I am currently a first year Master's student in Artificial Intelligence at Institute for Interdisciplinary Information Science(IIIS), Tsinghua University, advised by Prof.Shuran Zheng. My research interests include Data in AI, Robotics, and Multimodal Models. I received my bachelor’s degree from the Yuanpei College and dual degree in Economics from National School of Development at Peking University." data-zh="我是清华大学交叉信息研究院人工智能专业的一年级硕士研究生，师从郑舒冉老师。我主要关注人工智能数据、机器人以及多模态模型等方向。我在北京大学元培学院获得了学士学位，在国家发展研究院获得经济学双学位。">I am currently a first year Master's student in Artificial Intelligence at Institute for Interdisciplinary Information Science(IIIS), Tsinghua University, advised by Prof. <a href="#" target="https://shuranzh.github.io/shuran/index.html">Shuran Zheng</a>. My research interests include Data in AI, Robotics, and Multimodal Models. I received my bachelor’s degree from the Yuanpei College and dual degree in Economics from National School of Development at Peking University.</p>
+<p data-en=" I am particularly interested in exploring how artificial intelligence can be applied to real-world data and robotic systems, as well as how multimodal models can learn and interact with different types of information." data-zh="我对人工智能在真实数据和机器人系统中的应用，以及多模态模型对不同类型信息的学习与处理比较感兴趣。">I am particularly interested in exploring how artificial intelligence can be applied to real-world data and robotic systems, as well as how multimodal models can learn and interact with different types of information.</p>
+</div>
+<div class="contact">
+<span data-en="Email" data-zh="邮箱">Email</span>: <a href="mailto:liu-rl26@mails.tsinghua.edu.cn">liu-rl26@mails.tsinghua.edu.cn</a><br>
+<span data-en="Advisor" data-zh="导师">Advisor</span>: <a href="#" target="https://shuranzh.github.io/shuran/index.html">Prof. Shuran Zheng</a>
+</div>
+</div>
+<div class="portrait"><span data-en="Your photo" data-zh="个人照片">Your photo</span></div>
+</div>
+
+<section id="news"><h2 data-en="News" data-zh="动态">News</h2>
+<div class="news-list">
+<div class="news-item">
+<div class="news-date" data-en="Sep, 2026" data-zh="2026年9月">Sep, 2026</div>
+<div data-en="Started my Master's studies in Artificial Intelligence at IIIS, Tsinghua University."
+     data-zh="开始在清华大学攻读人工智能专业硕士。">
+Started my Master's studies in Artificial Intelligence at IIIS, Tsinghua University.
+</div>
+</div>
+</div>
+</section>
+
+<section id="research"><h2 data-en="Research Interests" data-zh="研究方向">Research Interests</h2>
+<p data-en="My research interests include Data in AI, Robotics, and Multimodal Models. I am particularly interested in exploring how AI can learn from and work with different types of data, interact with the physical world through robotic systems, and understand and generate information across multiple modalities." data-zh="我的研究方向包括人工智能数据、机器人和多模态模型。我比较关注人工智能如何从不同类型的数据中学习并利用数据，以及如何通过机器人系统与真实世界进行交互，并理解和生成不同模态的信息。">My research interests include AI for Data, Robotics, and Multimodal Models. I am particularly interested in exploring how AI can learn from and work with different types of data, interact with the physical world through robotic systems, and understand and generate information across multiple modalities.</p>
+</section>
+
+<!--
+<section id="publications"><h2>Publications</h2></section>
+<section id="projects"><h2>Projects</h2></section>
+-->
+
+<section id="contact"><h2 data-en="Contact" data-zh="联系方式">Contact</h2>
+<p data-en="Feel free to contact me about research, academic collaboration, or related topics." data-zh="如果你对我的研究方向、学术交流或相关合作感兴趣，欢迎与我联系。">Feel free to contact me about research, academic collaboration, or related topics.</p>
+<p>Email: <a href="mailto:liu-rl26@mails.tsinghua.edu.cn">liu-rl26@mails.tsinghua.edu.cn</a></p>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span>Ruolin Liu</div></footer>
+
+<script>
+function setLanguage(lang){
+document.documentElement.lang=lang==="zh"?"zh-CN":"en";
+document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset[lang]);
+document.getElementById("en").classList.toggle("active",lang==="en");
+document.getElementById("zh").classList.toggle("active",lang==="zh");
+localStorage.setItem("preferredLanguage",lang);
+}
+document.getElementById("en").onclick=()=>setLanguage("en");
+document.getElementById("zh").onclick=()=>setLanguage("zh");
+if(localStorage.getItem("preferredLanguage")==="zh")setLanguage("zh");
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
